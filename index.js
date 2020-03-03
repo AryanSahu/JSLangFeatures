@@ -135,3 +135,59 @@ Arrow functions are not hoisted. They must be defined before they are used.
  */
  var afun=(l,o)=>l*o; 
  console.log(afun(100,19))
+
+
+ /*
+ 
+ JavaScript has dynamic types. This means that the same variable 
+ can be used to hold different data types:
+ */ 
+var carName1 = "Volvo XC60";   // Using double quotes
+var carName2 = 'Volvo XC60';   // Using single quotes
+
+var x;           // Now x is undefined
+x = 5;           // Now x is a Number
+x = "John";      // Now x is a String
+
+
+//Arrays
+
+var fruitList=["apple","orange","pear","pineapple"];
+console.log(fruitList[0]);
+
+var cars = new Array("Saab", "Volvo", "BMW");
+
+var len=cars.length;
+var s=cars.sort();
+
+cars.forEach(printCar);
+
+
+function printCar(car)
+{
+console.log(car);
+
+}
+
+//In JavaScript, arrays use numbered indexes.  
+
+// In JavaScript, objects use named indexes.
+
+
+// JS objects
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+console.log(person.firstName);
+
+
+//In JavaScript, a variable without a value, has the value undefined
+var jk;
+jk=undefined;
+
+// empty object
+
+var k="";
+console.log(k);
+
+// JavaScript that typeof null is an object.
+
+//undefined and null are equal in value but different in type:
