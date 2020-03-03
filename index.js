@@ -1,3 +1,6 @@
+
+// "use strict";
+
 console.log('Learning Javascript');
 
 // using numbers
@@ -102,3 +105,33 @@ console.log(cxx+yxx)
 Strictmode
 JavaScript in strict mode does not allow variables to be used if they are not declared.
 */
+
+/*
+function hoisting
+Functions defined using an expression are not hoisted.
+*/
+console.log(myFunction(5));
+
+function myFunction(y) {
+  return y * y;
+}
+
+
+
+// self invoking functions
+
+(function () {
+    var x = "Hello!!"; 
+    console.log(x)
+    // I will invoke myself
+  })();
+
+
+ // Arrow functions
+ /*
+ Arrow functions do not have their own this. They are not well suited for defining object methods.
+
+Arrow functions are not hoisted. They must be defined before they are used.
+ */
+ var afun=(l,o)=>l*o; 
+ console.log(afun(100,19))
