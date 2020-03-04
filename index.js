@@ -173,6 +173,12 @@ console.log(car);
 
 // In JavaScript, objects use named indexes.
 
+//ECMAScript 5 defines a new method Array.isArray():
+
+cars.join("*");
+
+console.log(cars.toString());
+
 
 // JS objects
 var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
@@ -191,3 +197,42 @@ console.log(k);
 // JavaScript that typeof null is an object.
 
 //undefined and null are equal in value but different in type:
+
+
+
+//JSON 
+
+//use parse to convert from string to json
+// use stringfy to convert from json to string
+
+var obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');
+
+console.log(obj.name);
+
+
+var obj = { name: "John", age: 30, city: "New York" };
+var myJSON = JSON.stringify(obj);
+
+console.log(myJSON);
+
+// events
+
+
+//Classes
+class Car {
+  constructor(brand,price) {
+    this.carname=brand;
+    this.price=price;
+  }
+  present() {
+    return "I have a " + this.carname+" costing RS:"+this.price;
+  }
+
+  static specification()
+  {
+return "XXL";
+  }
+}
+
+mycar = new Car("Ford",12000);
+document.getElementById("demo").innerHTML = Car.specification();
