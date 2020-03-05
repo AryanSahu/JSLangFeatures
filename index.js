@@ -274,3 +274,26 @@ count++;
 document.getElementById("countertext").innerHTML=count;
 
 })
+
+
+
+// function closure
+// Inner function can access vars of outer function
+
+function outer()
+{
+var k=0;
+function inner()
+{
+
+  console.log("closure in action "+k++);
+}
+
+return inner;
+
+}
+
+
+var fk=outer();
+
+fk();
