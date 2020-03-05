@@ -282,7 +282,7 @@ document.getElementById("countertext").innerHTML=count;
 
 function outer()
 {
-var k=0;
+let k=0;
 function inner()
 {
 
@@ -297,3 +297,16 @@ return inner;
 var fk=outer();
 
 fk();
+
+
+//Function call backs
+//Callbacks are a way to make sure certain code doesn’t execute until other code has already finished execution.
+
+function callbexample(name,functionparameter)
+{
+console.log("name is Ganesh sahu"+" "+{name});
+functionparameter();
+
+}
+
+callbexample('sahu',()=>{console.log('call back function')});
