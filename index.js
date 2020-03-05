@@ -258,3 +258,19 @@ var child = document.querySelector('#child');
   gparent.addEventListener('click',function(){
     console.log("grand parent")
   })
+
+
+  const list = document.querySelector(".list");
+
+list.addEventListener("click", e => {
+    e.target.classList.toggle("completed")
+})
+
+
+var counter=document.querySelector("#counter");
+var count=0;
+counter.addEventListener('click',function(){
+count++;
+document.getElementById("countertext").innerHTML=count;
+
+})
