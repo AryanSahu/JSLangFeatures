@@ -310,3 +310,25 @@ functionparameter();
 }
 
 callbexample('sahu',()=>{console.log('call back function')});
+
+
+// Javascript promises
+
+let p=new Promise((resolve,reject)=>{
+var sum=1+1+1;
+  if(sum==2)
+  {
+    resolve('succeded');
+  }
+  else
+  {
+    reject('failed');
+  }
+
+})
+
+p.then((message)=>{
+  console.log('completed')
+}).catch((message)=>{
+  console.log("failed")
+})
