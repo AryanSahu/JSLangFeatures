@@ -236,3 +236,25 @@ return "XXL";
 
 mycar = new Car("Ford",12000);
 document.getElementById("demo").innerHTML = Car.specification();
+
+//Unlike functions, and other JavaScript declarations, class declarations are not hoisted.
+
+
+// Event Bubbling
+var parent = document.querySelector('#parent');
+
+  parent.addEventListener('click', function(){
+    console.log("Parent clicked");
+  });
+
+var child = document.querySelector('#child');
+
+  child.addEventListener('click', function(){
+    console.log("Child clicked");
+  });
+
+  var gparent=document.querySelector('#gparent');
+
+  gparent.addEventListener('click',function(){
+    console.log("grand parent")
+  })
